@@ -6,6 +6,8 @@
 html {
     font-size: 62.5%;
     font-family: 'Alata', sans-serif;
+    background: rgb(128,84,159);
+    background: linear-gradient(54deg, rgb(91, 51, 119) 0%, rgb(11, 13, 65) 78%, rgb(165, 164, 228) 100%);
 }
 
 :root {
@@ -24,8 +26,8 @@ header {
     min-width: 320px;
     height: 284px;
     text-align: center;
-    background: rgb(128,84,159);
-    background: linear-gradient(54deg, rgb(125, 69, 165) 0%, rgb(13, 16, 82) 78%, rgba(190,189,255,1) 100%);
+    /*background: rgb(128,84,159);
+    background: linear-gradient(54deg, rgb(125, 69, 165) 0%, rgb(13, 16, 82) 78%, rgba(190,189,255,1) 100%);*/
 }
 
 header h1 {
@@ -96,11 +98,67 @@ header h1 {
     border-radius: 5px;
     margin-bottom: 60px;
     top: 12px;
-    box-shadow: -10px 4px 8px rgba(35, 91, 117, 0.2);
+    box-shadow: -10px 4px 8px rgba(13, 39, 29, 0.2);
 }
 .header-p-text-button {
     display: flex;
     margin-right: 3px;
     justify-content: center;
 
+}
+
+main {
+    width: 100%;
+    height: auto; /* pongo la altura auto porque lo que hace eso es autoentender el contenido que habra adentro, por lo tanto se autoajustara al contenido que haya adentro*/
+    /*background: rgb(128,84,159);
+    background: linear-gradient(54deg, rgb(125, 69, 165) 0%, rgb(13, 16, 82) 78%, rgba(190,189,255,1) 100%);*/
+   }
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px; /*el padding me ayuda a alargar el height auto, por lo tanto puedo extener el height con el padding, sin embargo no puedo usar el margin ya que este solo me sirve para separar objetos. */
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px; /* por que 288? porque es el 90% de el width minimo que tiene un celular, y cual es el width minimo que posee un celular? facil, 320px. */
+    max-width: 900px;
+    margin: 0 auto; /* este margin me sirve para el width que no ocupa el 100%, como en eset caso... por lo tanto me sirve para ajustar el width y siempre mida lo que mida lograr centrar al objeto. */
+
+}
+
+.img-html { /* esta es la configuracion de la imagen,  */
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-size: cover; /* sirve para que la imagen se redimensione a medida que la pantalla crece */
+    background-position: center;
+    height: 290px;
+    width: 249px;
+    background-repeat: no-repeat; 
+    border-radius: 15px;
+    box-shadow: 15px -20px 30px rgba(140, 139, 143, 0.233);
+}
+hr {
+    /*margin-top: -20px;*/
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold; /* este es el peso de la fuente */
+    line-height: 2.6rem;
+    color: rgb(255, 240, 220);
+} 
+
+.main-exchange-container p {
+    margin-top: -14px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: rgba(255, 240, 220, 0.822);
 }
